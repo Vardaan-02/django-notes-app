@@ -18,3 +18,6 @@ COPY . /app/backend
 EXPOSE 8000
 #RUN python manage.py migrate
 #RUN python manage.py makemigrations
+
+# 🧠 👇 This is the magic you're missing!
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
